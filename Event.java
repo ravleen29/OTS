@@ -24,7 +24,7 @@ public class Event
     do{
     if (eventChoice.equals("Yes") )
     {
-        System.out.println("Here is the list of events for the following dates: ");
+         eventList(); 
         
     }
     else 
@@ -36,10 +36,18 @@ public class Event
         
           if (eventChoice.equals("Yes") )
         {
-          System.out.println("You might like these events to attend. Here is the list: ");
+          System.out.println("You might like these events to attend. ");
+          eventList();
         }
         
     }
    } while (eventsList);
    } 
+   public static void eventList(){
+       System.out.println("Here is the list of events: ");
+        System.out.println("1. Movie Nights!");
+        System.out.println("2. Stand up comedy!");
+        System.out.println("3. Buzz In!");
+        System.out.println("4. Spill the Tea!");
+   }
 }

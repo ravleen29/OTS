@@ -20,8 +20,8 @@ public class OTS
             while (true) {
         Scanner scanner = new Scanner(System.in);
         
-            System.out.println("1. Sign Up");
-            System.out.println("2. Log In");
+            System.out.println("1. Guest");
+            System.out.println("2. Sign Up");
             System.out.println("3. See Events");
             System.out.println("4. See Seats");
             System.out.println("5. Buy seats");
@@ -33,10 +33,10 @@ public class OTS
 
             switch (choice) {
                 case 1:
-                    signUp();
+                    guest();
                     break;
                 case 2:
-                    logIn();
+                    signUp();
                     break;
                 case 3:
                     seeEvents();
@@ -58,15 +58,30 @@ public class OTS
        }
     }
         
-        public void signUp()
+        public void guest()
         {
-            System.out.println("You are in sign up option now!");
-            
-            
+            System.out.println("You are in Guest option now!");
+            Scanner input = new Scanner(System.in);
+            String seeEvents;
+    
+            System.out.print("Would you like to see the list of events? ");
+            seeEvents = input.nextLine();
+        
+        if (seeEvents.equals("No") )
+        {
+            System.out.println("There are no other events than except for the list of shows published. ");
+        } else 
+        {    if (seeEvents.equals("Yes") )
+        {
+           seeEvents();
+             System.out.println("Want to buy seats for the event! ");
+             buySeats();
         }
-        public  void logIn()
+        }
+    }
+        public  void signUp()
         {
-            System.out.println("You are in log in option now!");
+            System.out.println("You are in sign in option now!");
             User user = new User();
             user.main();
         }
@@ -84,7 +99,7 @@ public class OTS
         }
         public void buySeats()
         {
-         System.out.println("Would you like to purchase seats for the event?");
+         System.out.println("Purchase seats: maximum 20 seats per show.");
          Seats seats = new Seats(20);
 
    
