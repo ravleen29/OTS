@@ -37,7 +37,7 @@ public class Seats {
                     availableSeats--;
                 }
             }
-            System.out.println("Successfully purchased " + seatsPurchased + " seat(s).");
+            System.out.println("Successfully purchased " + seatsPurchased + " seat(s) for £20" );
         } else {
             System.out.println("Invalid number of seats requested.");
         }

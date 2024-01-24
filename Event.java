@@ -17,7 +17,7 @@ public class Event
     Scanner input = new Scanner(System.in);
      String eventChoice;
     
-    System.out.print("Would you like to see the list of events? ");
+    System.out.print("Want to see the list of events? Yes or No ");
     eventChoice = input.nextLine();
     boolean eventsList = false;
     

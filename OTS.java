@@ -64,7 +64,7 @@ public class OTS
             Scanner input = new Scanner(System.in);
             String seeEvents;
     
-            System.out.print("Would you like to see the list of events? ");
+            System.out.print("Would you like to see the list of events? Yes or No");
             seeEvents = input.nextLine();
         
         if (seeEvents.equals("No") )
@@ -109,6 +109,7 @@ public class OTS
 
     
         seats.purchaseSeats(numSeats);
+        seats.checkAllSeats();
         }
         
     }

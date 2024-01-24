@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Seats
+comment1.params=maxSeats
+comment1.target=Seats(int)
+comment2.params=
+comment2.target=void\ initializeSeats()
+comment3.params=
+comment3.target=void\ checkAllSeats()
+comment4.params=numSeats
+comment4.target=void\ purchaseSeats(int)
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6
